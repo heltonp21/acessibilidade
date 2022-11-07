@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+   <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamp">
+   <h1>HTML/CSS Quiz</h1>
+   <nav>
+        <ul>
+            <li><a href="#student-info">INFO</a></li>
+            <li><a href="#html-questions">HTML</a></li>
+            <li><a href="#css-questions">CSS</a>CSS</li>
+        </ul>
+   </nav>
+</header>
+<main>
+    <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+        <section role="region" aria-labelledby="student-info">
+            <h2 id="student-info">Informações do Estudante</h2>
+            <div class="info">
+                <label for="student-name">Nome:</label>
+                <input type="text" name="name" id="student-name" placeholder="">
+            </div>
+            <div class="info">
+                <label for="student-email">Email:</label>
+                <input type="email" name="email" id="student-email">
+            </div>
+            <div class="info">
+                <label for="birth-date">Data de Nascimento:</label>
+                <input type="date" name="birth-date" id="birth-date">
+            </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+            <h2 id="html-questions">HTML Questions</h2>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+            <h2 id="css-questions">CSS Questions</h2>
+        </section>
+    </form>
+
+</main>
+</body>
+</html>
