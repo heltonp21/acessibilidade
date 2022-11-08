@@ -6,39 +6,51 @@ body {
 }
 
 header {
-    width: 100%;
-    height: 50px;
-    background-color: #1b1b32;
-    display: flex;
-  }
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+}
 
 #logo {
-    width: max(100px, 18vw);
-    background-color: #0a0a23;
-    aspect-ratio: 35/4;
-    padding: 0.4rem;
+  width: max(100px, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35/4;
+  padding: 0.4rem;
 }
 
 h1 {
-    color: #f1be32;
-    font-size: min(5vw, 1.2em);
-  }
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+}
 
 nav {
-    width: 50%;
-    max-width: 300px;
-    height: 50px;
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
 }
 
 nav > ul {
-    justify-content: space-evenly;
-    display: flex;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 h1, h2 {
-    font-family: Verdana, sans-serif;
-  }
+  font-family: Verdana, sans-serif;
+}
   
-  h2 {
-    border-bottom: 4px solid #dfdfe2
-  }
+h2 {
+  border-bottom: 4px solid #dfdfe2
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
