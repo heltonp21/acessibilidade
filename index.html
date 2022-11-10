@@ -37,49 +37,71 @@
             </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
-            <h2 id="html-questions">HTML Questions</h2>
+            <h2 id="html-questions">HTML</h2>
         </section>
-        <section role="region" aria-labelledby="css-questions">
-            <h2 id="css-questions">CSS Questions</h2>
-            <div class="question-block">
-                <p>1</p>
-                <fieldset class="question" name="html-question-one">
-                    <legend>O elemento legend representa uma legenda para o conteúdo de seu elemento fieldset pai?</legend>
-                        <ul class="answers-list">
-                            <li>
-                                <label>
-                                    <input id="q1-a1" type="radio">
+        <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+                <legend>O elemento legend representa uma legenda para o conteúdo de seu elemento fieldset pai?</legend>
+                <ul class="answers-list">
+                    <li>
+                        <label for="q1-a1">
+                            <input id="q1-a1" type="radio" value="true" name="q1">
+                            True
                                 </label>
                             </li>
                             <li>
-                                <label>
-                                    <input id="q1-a2" type="radio">
+                                <label for="q1-a2">
+                                    <input id="q1-a2" type="radio" value="false" name="q1">
+                                    False
                                 </label>
                             </li>
                         </ul>
-                </fieldset>
-            </div>
-            <div class="question-block">
-                <p>2</p>
-                <fieldset class="question" name="html-question-two">
-                    <legend>O elemento label que aninha um elemento de entrada precisa ter um atributo for com o mesmo valor que o id da entrada?</legend>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="html-question-two">
+                        <legend>O elemento label que aninha um elemento de entrada precisa ter um atributo for com o mesmo valor que o id da entrada?</legend>
                         <ul class="answers-list">
                             <li>
-                                <label>
-                                    <input id="q2-a1" type="radio">
+                                <label for="'q2-a1">
+                                    <input id="q2-a1" type="radio" value="true" name="q2">
+                                    True
                                 </label>
                             </li>
                             <li>
-                                <label>
-                                    <input id="q2-a2" type="radio">
+                                <label for="q2-a2">
+                                    <input id="q2-a2" type="radio" value="false" name="q2">
+                                    False
                                 </label>
                             </li>
                         </ul>
-                </fieldset>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+            <h2 id="css-questions">CSS </h2>
+            <div class="formrow">
+                <div class="question-block">
+                    <label for="customer">Você é um desenvolvedor frontend?</label>
+                </div>
+                <div class="answer">
+                    <select name="customer" id="customer" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="question-block">
+                    <label for="">Você tem alguma pergunta:</label>
+                </div>
+                <div class="answer">
+                    <textarea name="question" id="question" cols="5" rows="24" placeholder="O que é flexbox..."></textarea>
+                </div>
             </div>
-        </section>
-    </form>
-
-</main>
+            </section>
+        </form>
+    </main>
 </body>
 </html>
