@@ -5,10 +5,10 @@
 }
 
 body {
-    background: #f5f6f7;
-    color: #1b1b32;
-    font-family: Helvetica;
-    margin: 0;
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 #logo {
   width: max(100px, 18vw);
   background-color: #0a0a23;
-  aspect-ratio: 35/4;
+  aspect-ratio: 35 / 4;
   padding: 0.4rem;
 }
 
@@ -42,8 +42,8 @@ nav {
 }
 
 nav > ul {
-  justify-content: space-evenly;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 0;
@@ -51,18 +51,18 @@ nav > ul {
   height: 100%;
 }
 
-nav li {
+nav > ul > li {
   color: #dfdfe2;
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
 }
 
-nav li:hover {
+nav > ul > li:hover {
   background-color: #dfdfe2;
   color: #1b1b32;
   cursor: pointer;
- }
+}
 
 li > a {
   color: inherit;
@@ -75,25 +75,22 @@ main {
 
 section {
   width: 80%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-left: auto;
+  margin: 0 auto 10px auto;
   max-width: 600px;
 }
 
 h1, h2 {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Tahoma;
 }
-  
+
 h2 {
   border-bottom: 4px solid #dfdfe2;
-  margin-top: 0;
-  padding: 60px;
+  margin-top: 0px;
+  padding-top: 60px;
 }
 
 .info {
-  padding: 10 0 0 5;
+  padding: 10px 0 0 5px;
 }
 
 .formrow {
@@ -103,6 +100,10 @@ h2 {
 
 input {
   font-size: 16px;
+}
+
+.info label, .info input {
+  display: inline-block;
 }
 
 .info input {
@@ -136,7 +137,7 @@ p::before {
 
 .question {
   border: none;
-  padding: 0;
+  padding-bottom: 0;
 }
 
 .answers-list {
@@ -155,12 +156,13 @@ button {
 }
 
 footer {
+  background-color: #2a2a40;
   display: flex;
   justify-content: center;
-  background-color: #2a2a40;
 }
 
-footer, footer a {
+footer,
+footer a {
   color: #dfdfe2;
 }
 
@@ -180,5 +182,3 @@ address {
   white-space: nowrap;
   border: 0;
 }
-
-
